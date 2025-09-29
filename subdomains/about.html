@@ -8,35 +8,106 @@
     <script defer src="script.js"></script>
 </head>
 <body>
-    <h2 class="title">About Me</h2>
-    <p>
-        My long-term goals are to leave a real mark on the world through Computer Science and Mathematics. I would love to be a researcher
-        and dedicate myself to advancing knowledge.
-        </p>
-        <div class="imageflex">
-            <img src="Pictures/SyipKickoffPresentation.jpg" style="width:20%;height:20%;">
-            <p class="imageflexcontent">
-                •  Well versed in Python, Java, C++, C, Javascript, <br>
-                •  Skilled in 3D design (Solidworks, Onshape) and robot buildin.<br>
-                •  Participated in multiple Vex, Vex IQ and FRC competitions for 4 years.<br>
-                •  Self-starting and team-oriented with the ability to learn and apply new technologies.<br>
-                <br><span class="title">Math interests</span><br>
-                •  Number Theory<br>
-                •  Calculus <br>
-                •  Analysis <br>
-                •  Discrete Mathematics<br>
-                •  Linear Algebra<br>
-
-                <br><span class="title">Computer Science interests</span><br>
-                •  Classical Machine Learning & Neural Networks<br>
-                •  Cryptography<br>
-                •  Symbolic Computation<br>
-                •  Computational Biomechanics<br>
-                •  Computer Vision<br><br>
-                <span class="remark">Unweighted GPA:</span><b> 4</b><br>
-                <span class="remark">Weighted GPA:</span><b> 5.06</b><br>
-
-            </p>
+    <div class="container">
+        <div class="left-column">
+            <div class="header">
+                <h1 class="name">Ernesto Korin</h1>
+                <div class="title">MCPSHS Student</div>
+                <div class="subtitle">Prospective CS/Math Major</div>
+            </div>
+            
+            <img src="Pictures\SyipKickoffPresentation.jpg" alt="Profile Picture" class="profile-image">
+            
+            <div class="description">
+                My long-term goals are to leave a real mark on the world through Computer Science and Mathematics. I would love to be a researcher and dedicate myself to advancing knowledge.
+            </div>
+            
+            <div class="contact">
+                Preferred way of contact:<br>
+                <a href="mailto:ernestokorin@gmail.com">ernestokorin@gmail.com</a>
+            </div>
         </div>
+        
+        <div class="right-column">
+            <div class="quote">
+                "We can only see a short distance ahead, but we can see plenty there that needs to be done."
+                <div class="quote-author">Alan Turing</div>
+            </div>
+            
+            <div class="dropdown-section" onclick="toggleDropdown(this)">
+                <div class="dropdown-header">
+                    <span class="dropdown-icon">📚</span>
+                    <span class="dropdown-title">Classes</span>
+                    <span class="dropdown-arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <div class="classes-grid">
+                        <div class="classes-column">
+                            <h4 class="column-title">Taken:</h4>
+                            <ul class="classes-list">
+                                <li>AP Calculus BC - 5</li>
+                                <li>AP Computer Science Principles - 5</li>
+                                <li>AP Physics C: Mechanics - 4</li>
+                                <li>AP English Language and Composition - 4</li>      
+                                <li>AP Precalculus - 5</li>
+                                <li>AP Human Geography - 4</li>
+                                <li>AP Physics 1 - 3</li>                                          
+                                <li>DE STA2023 at <a href="https://www.mdc.edu/">MDC</a> - A</li>
+                                <li>DE MAD 1100 at <a href="https://www.mdc.edu/">MDC</a> - A</li>
+                                <li>DE EGN 1949 at <a href="https://www.mdc.edu/">MDC</a> - A</li>
+                            </ul>
+                        </div>
+                        <div class="classes-column">
+                            <h4 class="column-title">Taking:</h4>
+                            <ul class="classes-list">
+                                <li>DE MAC 2313 at <a href="https://www.mdc.edu/">MDC</a></li>
+                                <li>DE MAP 2302 at <a href="https://www.mdc.edu/">MDC</a></li>
+                                <li>DE EGN 1100C at <a href="https://www.fiu.edu/">FIU</a></li>
+                                <li>DE IDC 1000 at <a href="https://www.fiu.edu/">FIU</a></li>
+                                <li>AP Physics C: Electricity and Magnetism</li>
+                                <li>AP English Literature and Composition</li>
+                                <li>AP Computer Science A</li>
+                                <li>AP Physics 2: Algebra-Based</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="dropdown-section" onclick="toggleDropdown(this)">
+                <div class="dropdown-header">
+                    <span class="dropdown-icon">🎯</span>
+                    <span class="dropdown-title">Interests</span>
+                    <span class="dropdown-arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><strong>Math:</strong> Number Theory, Discrete Math, Linear Algebra, Differential Equations,</li>
+                        <li><strong>Computer Science:</strong> Classical Machine Learning & Neural Networks, Cryptography, Web Scraping, Sentiment Analysis, Computer Vision, Symbolic Computation</li>
+                        <li><strong>Research:</strong> Computational Biomechanics, Computer Vision</li>
+                        <li><strong>Robotics:</strong> VEX, VEX IQ, and FRC competitions</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="dropdown-section" onclick="toggleDropdown(this)">
+                <div class="dropdown-header">
+                    <span class="dropdown-icon">⚡</span>
+                    <span class="dropdown-title">Skills</span>
+                    <span class="dropdown-arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><strong>Programming:</strong> Python, Java, C/C++</li>
+                        <li><strong>3D Design:</strong> Solidworks, Onshape</li>
+                        <li><strong>Robotics:</strong> Robot building and programming</li>
+                        <li><strong>Competition Experience:</strong> 5 years in VEX, VEX IQ, and FRC</li>
+                        <li><strong>Academic:</strong> Unweighted GPA: 4.0, Weighted GPA: 5.179</li>
+                        <li><strong>Soft Skills:</strong> Self-starting, team-oriented, quick learner</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

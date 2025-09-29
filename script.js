@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const content = document.getElementById('content');
     const links = document.querySelectorAll('nav ul li a');
 
-    // Function to load a page
+    // function 2 load a page
     const loadPage = (page) => {
         fetch(page)
             .then(response => response.text())
@@ -12,10 +12,10 @@ document.addEventListener('DOMContentLoaded', () => {
             .catch(err => console.error('Failed to load page: ', err));
     };
 
-    // Load the 'about.html' content on initial load
+    // load about.html by default
     loadPage('subdomains\\about.html');
 
-    // Add event listeners for navigation links
+    // event listeners for navigation links
     links.forEach(link => {
         link.addEventListener('click', (e) => {
             e.preventDefault();
@@ -25,3 +25,23 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+
+
+//dropdowns
+function toggleDropdown(element) {
+    element.classList.toggle('active');
+}
+
+// page load animations
+document.addEventListener('DOMContentLoaded', function() {
+    const sections = document.querySelectorAll('.dropdown-section');
+    sections.forEach((section, index) => {
+        setTimeout(() => {
+            section.style.transform = 'translateY(0)';
+            section.style.opacity = '1';
+        }, index * 100);
+    });
+});
+
+
+// new 
